@@ -9,6 +9,7 @@ var io = require('socket.io')(http);
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 require('./express')(app)
+require('./socket')(io)
 
 var port = process.env.PORT || config.port;
 
